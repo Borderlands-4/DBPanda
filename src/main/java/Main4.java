@@ -1,4 +1,3 @@
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -9,24 +8,30 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ *
+ */
 public class Main4{
-	public static String namespace = "http://pandarql/";
+	public static String namespace = "http://DBPanda/";
 	public static void main(String[] args) throws IOException, ParseException {
 		// Création du modèle et du préfixe
 		OntModel model = ModelFactory.createOntologyModel();
-		//String namespace = "http://pandarql/";
-		model.setNsPrefix("pandarql", namespace);
+
+		// Définition d'un prefix pour le namespace
+		model.setNsPrefix("DBPanda", namespace);
+
 		//Récupération de la propriété type, permettant de définir le type d'un sujet
 		Property typeProp = model.getProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#", "type");
-		//Création des propriétés de base, nom, id, ...
+
+		//Création des propriétés de base: nom, id, ...
 		Property nameProp  = model.createProperty(namespace, "name");
 		Property idProp = model.createProperty(namespace, "id");
-		//Création de la classe joueur et des sous classes (pour les différents jeux)
+
+		//Création de la classe joueur et de ses sous classes (pour les différents jeux)
 		OntClass playerClass = model.createClass(namespace+"Player");
 		OntClass csgoPlayerClass = model.createClass(namespace+"CSGO_Player");
 		OntClass dotaPlayerClass = model.createClass(namespace+"Dota2_Player");
@@ -38,28 +43,30 @@ public class Main4{
 		playerClass.addSubClass(lolPlayerClass);
 		playerClass.addSubClass(owPlayerClass);
 		playerClass.addSubClass(pubgPlayerClass);
-		/* On ajoute tous les joueurs de csgo au modèle
+
+		/* On ajoute tous les joueurs des différents jeux au modèle
 		*	Pour cela on récupère le tableau JSON qui contient nos joueurs
 		*/
-		JSONArray playersJSON = getArrayFromName("csgoplayers");
+		JSONArray playersJSON = getArrayFromName("csgo_players", "players");
 		addEveryPlayer(model, csgoPlayerClass, playerClass, playersJSON, nameProp, idProp, typeProp);
 
-		playersJSON = getArrayFromName("dotaplayers");
+		playersJSON = getArrayFromName("dota_players", "players");
 		addEveryPlayer(model, dotaPlayerClass, playerClass, playersJSON, nameProp, idProp, typeProp);
 
-		playersJSON = getArrayFromName("lolplayers");
+		playersJSON = getArrayFromName("lol_players", "players");
 		addEveryPlayer(model, lolPlayerClass, playerClass, playersJSON, nameProp, idProp, typeProp);
 
-		playersJSON = getArrayFromName("owplayers");
+		playersJSON = getArrayFromName("ow_players", "players");
 		addEveryPlayer(model, owPlayerClass, playerClass, playersJSON, nameProp, idProp, typeProp);
 
-		playersJSON = getArrayFromName("pubgplayers");
+		playersJSON = getArrayFromName("pubg_players", "players");
 		addEveryPlayer(model, pubgPlayerClass, playerClass, playersJSON, nameProp, idProp, typeProp);
 
-		//On créé les propriétés qui relie les joueurs aux équipes
+		//On crée les propriétés qui relient les joueurs aux équipes
 		ObjectProperty playersProp = model.createObjectProperty(namespace+"#player");
 		ObjectProperty teamProp = model.createObjectProperty(namespace+"#team");
 		playersProp.addInverseOf(teamProp);
+
 		//On créé les différentes classes
 		OntClass teamClass = model.createClass(namespace+"team");
 		OntClass dotaTeamClass = model.createClass(namespace+"Dota2_team");
@@ -73,19 +80,19 @@ public class Main4{
 		teamClass.addSubClass(owTeamClass);
 		teamClass.addSubClass(pubgTeamClass);
 
-		JSONArray teamsJSON = getArrayFromName("csgoteams");
+		JSONArray teamsJSON = getArrayFromName("csgo_teams", "teams");
 		addEveryTeam(model, teamClass, csgoTeamClass, teamsJSON, nameProp, idProp, typeProp, playersProp);
 
-		teamsJSON = getArrayFromName("dotateams");
+		teamsJSON = getArrayFromName("dota_teams", "teams");
 		addEveryTeam(model, teamClass, dotaTeamClass, teamsJSON, nameProp, idProp, typeProp, playersProp);
 
-		teamsJSON = getArrayFromName("lolteams");
+		teamsJSON = getArrayFromName("lol_teams", "teams");
 		addEveryTeam(model, teamClass, lolTeamClass, teamsJSON, nameProp, idProp, typeProp, playersProp);
 
-		teamsJSON = getArrayFromName("owteams");
+		teamsJSON = getArrayFromName("ow_teams", "teams");
 		addEveryTeam(model, teamClass, owTeamClass, teamsJSON, nameProp, idProp, typeProp, playersProp);
 
-		teamsJSON = getArrayFromName("pubgteams");
+		teamsJSON = getArrayFromName("pubg_teams", "teams");
 		addEveryTeam(model, teamClass, pubgTeamClass, teamsJSON, nameProp, idProp, typeProp, playersProp);
 		//On affiche le modèle dans la console en format XML/RDF (par défaut)
 		model.write(System.out);
@@ -105,15 +112,16 @@ public class Main4{
 		}
 
 	}
-	public static JSONArray getArrayFromName(String name) throws IOException, ParseException {
+	public static JSONArray getArrayFromName(String name, String directory) throws IOException, ParseException {
 		//On parse le fichier json correspondant, qu'on met dans un fichier JSONObjet avant de récupérer le tableau d'objet qu'il contient
 		//Nb : on ne peut pas directement parser un JSONArray, d'où la création d'un objet json intermédiaire, notamment lors l'extraction du JSON via l'API
 		JSONParser parser = new JSONParser();
-		FileReader fileReader = new FileReader("./src/main/resources/"+name+".json");
+		FileReader fileReader = new FileReader("./src/main/resources/"+directory+"/"+name+".json");
 		JSONObject jsonObject = (JSONObject) parser.parse(fileReader);
 		JSONArray res = (JSONArray) jsonObject.get(name);
 		return res;
 	}
+
 
 	/**
 	 * Méthode pour ajouter tous les joueurs présents dans la tableau JSON à notre modèle. Nb : on lui passe les propriétés et les classes pour pas se faire chier à les récuperer dans la méthode
