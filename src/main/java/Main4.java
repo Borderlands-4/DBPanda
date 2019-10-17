@@ -31,6 +31,13 @@ public class Main4{
 		Property nameProp  = model.createProperty(namespace, "name");
 		Property idProp = model.createProperty(namespace, "id");
 
+		//Création de la class video games
+		OntClass videogameClass = model.createClass(namespace+"VideoGame");
+
+		// On ajoute tous les jeux
+		addEveryVideoGame(model, videogameClass, nameProp, idProp, typeProp);
+
+
 		//Création de la classe joueur et de ses sous classes (pour les différents jeux)
 		OntClass playerClass = model.createClass(namespace+"Player");
 		OntClass csgoPlayerClass = model.createClass(namespace+"CSGO_Player");
@@ -182,4 +189,19 @@ public class Main4{
 			resourceTeam.addProperty(typeProp, teamSubClass);
 		}
 	}
-}
+
+	public static void addEveryVideoGame(OntModel model, OntClass videogameClass, Property nameProp, Property idProp, Property typeProp) {
+		String[] videoGames = {"csgo", "dota2", "lol", "ow", "pubg"};
+		String[] names = {"Counter-Strike: Global Offensive", "Dota 2", "League of Legends", "Overwatch", "PlayerUnknown's Battlegrounds"};
+
+		Resource resourceVideoGame;
+
+		for (int i=0; i<videoGames.length; i++) {
+			resourceVideoGame = model.createResource(namespace+URIref.encode(videoGames[i]));
+
+			resourceVideoGame.addProperty(idProp, Integer.toString(i));
+			resourceVideoGame.addProperty(nameProp, names[i]);
+			resourceVideoGame.addProperty(typeProp, videogameClass);
+		}
+	}
+
