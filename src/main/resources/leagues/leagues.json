@@ -1,0 +1,1926 @@
+{
+  "leagues":
+[
+  {
+    "id": 4248,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4248/600px-Elisa_Viihde_CSGO-liiga.png",
+    "live_supported": false,
+    "modified_at": "2019-10-06T16:37:31Z",
+    "name": "Finnish Esports League",
+    "series": [
+      {
+        "begin_at": "2019-10-19T12:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Season 7 2019",
+        "id": 1874,
+        "league_id": 4248,
+        "modified_at": "2019-10-06T16:26:10Z",
+        "name": null,
+        "prizepool": null,
+        "season": "7",
+        "slug": "cs-go-finnish-esports-league-7-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-finnish-esports-league",
+    "url": "https://fel.gg/",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4247,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4247/900px-Teslogo.png",
+    "live_supported": false,
+    "modified_at": "2019-10-03T09:15:59Z",
+    "name": "Telia Esports Series",
+    "series": [
+      {
+        "begin_at": "2019-10-04T20:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Season 2 2019",
+        "id": 1873,
+        "league_id": 4247,
+        "modified_at": "2019-10-03T08:18:10Z",
+        "name": null,
+        "prizepool": "40000 Euro",
+        "season": "2",
+        "slug": "cs-go-telia-esports-series-2-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-telia-esports-series",
+    "url": "https://www.teliaesportsseries.com",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4246,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4246/600px-Rlcs.png",
+    "live_supported": false,
+    "modified_at": "2019-10-02T23:51:11Z",
+    "name": "EU RLCS",
+    "series": [
+      {
+        "begin_at": "2019-10-06T16:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Season season 8 2019",
+        "id": 1872,
+        "league_id": 4246,
+        "modified_at": "2019-10-02T23:51:53Z",
+        "name": "Season",
+        "prizepool": "214250 United States Dollar",
+        "season": "8",
+        "slug": "rl-eu-rlcs-season-8-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "rl-eu-rlcs",
+    "url": "https://www.rocketleagueesports.com/",
+    "videogame": {
+      "current_version": null,
+      "id": 22,
+      "name": "Rocket League",
+      "slug": "rl"
+    }
+  },
+  {
+    "id": 4245,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4245/600px-Rlcs.png",
+    "live_supported": false,
+    "modified_at": "2019-10-02T23:51:12Z",
+    "name": "NA RLCS",
+    "series": [
+      {
+        "begin_at": "2019-10-05T19:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Season season 8 2019",
+        "id": 1871,
+        "league_id": 4245,
+        "modified_at": "2019-10-04T11:17:24Z",
+        "name": "Season",
+        "prizepool": "214250 United States Dollar",
+        "season": "8",
+        "slug": "rl-na-rlcs-season-8-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "rl-na-rlcs",
+    "url": "https://www.rocketleagueesports.com/",
+    "videogame": {
+      "current_version": null,
+      "id": 22,
+      "name": "Rocket League",
+      "slug": "rl"
+    }
+  },
+  {
+    "id": 4244,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4244/LOOT.BET_Icon.png",
+    "live_supported": false,
+    "modified_at": "2019-10-03T18:09:27Z",
+    "name": "LOOT.BET",
+    "series": [
+      {
+        "begin_at": "2019-09-04T10:55:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Season 4 2019",
+        "id": 1858,
+        "league_id": 4244,
+        "modified_at": "2019-10-01T09:30:58Z",
+        "name": null,
+        "prizepool": "30000 United States Dollar",
+        "season": "4",
+        "slug": "cs-go-loot-bet-4-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-loot-bet",
+    "url": "https://loot.bet/cs",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4243,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4243/ffe7a334-bf82-466d-afe4-284ff0602435.jpeg",
+    "live_supported": false,
+    "modified_at": "2019-09-30T12:21:15Z",
+    "name": "ESEA",
+    "series": [
+      {
+        "begin_at": "2019-09-08T22:00:00Z",
+        "description": null,
+        "end_at": "2019-12-16T19:00:00Z",
+        "full_name": "Mdl north america season 32 2019",
+        "id": 1856,
+        "league_id": 4243,
+        "modified_at": "2019-10-01T07:32:17Z",
+        "name": "MDL North America",
+        "prizepool": null,
+        "season": "32",
+        "slug": "cs-go-esea-mdl-north-america-32-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-09-09T09:05:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Mdl australia season 32 2019",
+        "id": 1855,
+        "league_id": 4243,
+        "modified_at": "2019-09-30T17:45:39Z",
+        "name": "MDL Australia",
+        "prizepool": "4500 United States Dollar",
+        "season": "32",
+        "slug": "cs-go-esea-mdl-australia-32-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-09-09T15:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Mdl europe season 32 2019",
+        "id": 1854,
+        "league_id": 4243,
+        "modified_at": "2019-09-30T11:07:35Z",
+        "name": "MDL Europe",
+        "prizepool": "2500 United States Dollar",
+        "season": "32",
+        "slug": "cs-go-esea-mdl-europe-32-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-esea",
+    "url": "https://play.esea.net/",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4242,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4242/800px-Hainan_Master_Cup.jpg",
+    "live_supported": false,
+    "modified_at": "2019-09-30T08:31:47Z",
+    "name": "Hainan Master Cup",
+    "series": [
+      {
+        "begin_at": "2019-10-27T23:00:00Z",
+        "description": null,
+        "end_at": "2019-11-04T19:00:00Z",
+        "full_name": "Hainan master cup 2019",
+        "id": 1853,
+        "league_id": 4242,
+        "modified_at": "2019-09-30T08:32:37Z",
+        "name": "Hainan Master Cup",
+        "prizepool": "500000 Chinese Yuan",
+        "season": null,
+        "slug": "dota-2-hainan-master-cup-hainan-master-cup-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-hainan-master-cup",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4241,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4241/CLUTCH_BR_League.png",
+    "live_supported": false,
+    "modified_at": "2019-09-24T11:15:43Z",
+    "name": "CLUTCH BR League",
+    "series": [
+      {
+        "begin_at": "2019-09-09T22:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Season 1 2019",
+        "id": 1852,
+        "league_id": 4241,
+        "modified_at": "2019-09-23T13:00:01Z",
+        "name": null,
+        "prizepool": "15000 United States Dollar",
+        "season": "1",
+        "slug": "cs-go-clutch-brasileirao-1-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-clutch-brasileirao",
+    "url": "https://clutchcircuit.com.br/",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4240,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4240/q_pom15n_400x400.jpg",
+    "live_supported": false,
+    "modified_at": "2019-09-08T16:22:17Z",
+    "name": "V4 Future Sports Festival",
+    "series": [
+      {
+        "begin_at": "2019-09-18T09:00:00Z",
+        "description": null,
+        "end_at": "2019-09-22T20:08:00Z",
+        "full_name": "2019",
+        "id": 1846,
+        "league_id": 4240,
+        "modified_at": "2019-09-22T20:10:46Z",
+        "name": null,
+        "prizepool": "300000 Euro",
+        "season": null,
+        "slug": "cs-go-v4-future-sports-festival-2019",
+        "winner_id": 125071,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-v4-future-sports-festival",
+    "url": "https://v4futuresports.eu/",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4239,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4239/Gamesclashmasters.png",
+    "live_supported": false,
+    "modified_at": "2019-09-08T16:01:56Z",
+    "name": "Games Clash Masters",
+    "series": [
+      {
+        "begin_at": "2019-09-20T08:00:00Z",
+        "description": null,
+        "end_at": "2019-09-22T15:35:00Z",
+        "full_name": "2019",
+        "id": 1840,
+        "league_id": 4239,
+        "modified_at": "2019-09-22T18:03:11Z",
+        "name": null,
+        "prizepool": "100000 United States Dollar",
+        "season": null,
+        "slug": "cs-go-games-clash-masters-2019",
+        "winner_id": 126208,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-games-clash-masters",
+    "url": "http://gamesclash.pro/",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4238,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4238/600px-The_Gauntlet_logo.png",
+    "live_supported": false,
+    "modified_at": "2019-10-06T21:09:10Z",
+    "name": "Contenders: The Gauntlet",
+    "series": [
+      {
+        "begin_at": "2019-10-09T02:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "2019",
+        "id": 1835,
+        "league_id": 4238,
+        "modified_at": "2019-10-06T16:44:57Z",
+        "name": "",
+        "prizepool": "250000 United States Dollar",
+        "season": null,
+        "slug": "ow-the-gauntlet-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "ow-the-gauntlet",
+    "url": "https://overwatchcontenders.com/",
+    "videogame": {
+      "current_version": null,
+      "id": 14,
+      "name": "Overwatch",
+      "slug": "ow"
+    }
+  },
+  {
+    "id": 4236,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4236/600px-WCG2019.png",
+    "live_supported": false,
+    "modified_at": "2019-07-13T18:15:27Z",
+    "name": "World Cyber Games",
+    "series": [
+      {
+        "begin_at": "2019-07-18T02:00:00Z",
+        "description": null,
+        "end_at": "2019-07-22T18:00:00Z",
+        "full_name": "World cyber games 2019",
+        "id": 1829,
+        "league_id": 4236,
+        "modified_at": "2019-07-21T05:36:23Z",
+        "name": "World Cyber Games",
+        "prizepool": null,
+        "season": null,
+        "slug": "dota-2-world-cyber-games-world-cyber-games-2019",
+        "winner_id": 1652,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-world-cyber-games",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4235,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4235/600px-Starladder_Logo.png",
+    "live_supported": false,
+    "modified_at": "2019-07-10T16:07:48Z",
+    "name": "StarLadder",
+    "series": [
+      {
+        "begin_at": "2019-07-17T08:00:00Z",
+        "description": null,
+        "end_at": "2019-07-21T18:00:00Z",
+        "full_name": "Americas minor - berlin 2019",
+        "id": 1826,
+        "league_id": 4235,
+        "modified_at": "2019-07-31T15:21:17Z",
+        "name": "Americas Minor - Berlin",
+        "prizepool": null,
+        "season": null,
+        "slug": "cs-go-starladder-major-americas-minor-berlin-2019",
+        "winner_id": 3256,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-07-17T14:00:00Z",
+        "description": null,
+        "end_at": "2019-07-21T17:07:00Z",
+        "full_name": "Europe minor - berlin 2019",
+        "id": 1825,
+        "league_id": 4235,
+        "modified_at": "2019-08-21T17:20:15Z",
+        "name": "Europe Minor - Berlin",
+        "prizepool": "50000 United States Dollar",
+        "season": null,
+        "slug": "cs-go-starladder-major-europe-minor-berlin-2019",
+        "winner_id": 3240,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-07-24T08:00:00Z",
+        "description": null,
+        "end_at": "2019-07-28T13:31:00Z",
+        "full_name": "Asia minor - berlin 2019",
+        "id": 1828,
+        "league_id": 4235,
+        "modified_at": "2019-08-21T17:19:21Z",
+        "name": "Asia Minor - Berlin",
+        "prizepool": "50000 United States Dollar",
+        "season": null,
+        "slug": "cs-go-starladder-major-asia-minor-berlin-2019",
+        "winner_id": 3258,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-07-24T14:00:00Z",
+        "description": null,
+        "end_at": "2019-07-29T00:00:00Z",
+        "full_name": "Cis minor - berlin 2019",
+        "id": 1830,
+        "league_id": 4235,
+        "modified_at": "2019-07-31T15:21:30Z",
+        "name": "CIS Minor - Berlin",
+        "prizepool": "50000 United States Dollar",
+        "season": null,
+        "slug": "cs-go-starladder-major-cis-minor-berlin-2019",
+        "winner_id": 60201,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-07-29T10:00:00Z",
+        "description": null,
+        "end_at": "2019-07-29T18:45:00Z",
+        "full_name": "Minor play-in - berlin 2019",
+        "id": 1831,
+        "league_id": 4235,
+        "modified_at": "2019-07-31T15:17:54Z",
+        "name": "Minor Play-in - Berlin",
+        "prizepool": null,
+        "season": null,
+        "slug": "cs-go-starladder-major-minor-play-in-berlin-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-08-23T10:00:00Z",
+        "description": null,
+        "end_at": "2019-09-08T18:20:00Z",
+        "full_name": "Major - berlin 2019",
+        "id": 1824,
+        "league_id": 4235,
+        "modified_at": "2019-09-08T18:27:41Z",
+        "name": "Major - Berlin",
+        "prizepool": "1000000 United States Dollar",
+        "season": null,
+        "slug": "cs-go-starladder-major-major-berlin-2019",
+        "winner_id": 3209,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-starladder-major",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4234,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4234/Webp.net-resizeimage.png",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:12:58Z",
+    "name": "Good Game League",
+    "series": [
+      {
+        "begin_at": "2019-07-13T08:00:00Z",
+        "description": null,
+        "end_at": "2019-07-14T19:06:00Z",
+        "full_name": "Finals 2019",
+        "id": 1822,
+        "league_id": 4234,
+        "modified_at": "2019-07-16T15:20:14Z",
+        "name": "Finals",
+        "prizepool": "100000 Euro",
+        "season": null,
+        "slug": "cs-go-good-game-league-finals-2019",
+        "winner_id": 3210,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-good-game-league",
+    "url": "http://ggleague.pl/",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4233,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4233/PUBG_nationscup_logo.png",
+    "live_supported": false,
+    "modified_at": "2019-08-23T06:42:11Z",
+    "name": "Nations Cup",
+    "series": [
+      {
+        "begin_at": "2019-08-09T08:30:00Z",
+        "description": null,
+        "end_at": "2019-08-11T12:31:00Z",
+        "full_name": "2019",
+        "id": 1820,
+        "league_id": 4233,
+        "modified_at": "2019-08-11T22:53:36Z",
+        "name": null,
+        "prizepool": "500000 United States Dollar",
+        "season": null,
+        "slug": "pubg-pubg-nations-cup-2019",
+        "winner_id": 126139,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "pubg-pubg-nations-cup",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 20,
+      "name": "PUBG",
+      "slug": "pubg"
+    }
+  },
+  {
+    "id": 4232,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4232/600px-MET_Asia_Classic_logo.png",
+    "live_supported": false,
+    "modified_at": "2019-08-23T06:42:10Z",
+    "name": "MET Asia Series",
+    "series": [
+      {
+        "begin_at": "2019-07-26T08:00:00Z",
+        "description": null,
+        "end_at": "2019-07-28T13:05:00Z",
+        "full_name": "2019",
+        "id": 1819,
+        "league_id": 4232,
+        "modified_at": "2019-07-31T18:29:23Z",
+        "name": "",
+        "prizepool": "300000 United States Dollar",
+        "season": null,
+        "slug": "pubg-met-asia-series-2019",
+        "winner_id": 125697,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "pubg-met-asia-series",
+    "url": "https://www.met-asiaseries.com/",
+    "videogame": {
+      "current_version": null,
+      "id": 20,
+      "name": "PUBG",
+      "slug": "pubg"
+    }
+  },
+  {
+    "id": 4231,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4231/600px-GLL_Grand_Slam.png",
+    "live_supported": false,
+    "modified_at": "2019-08-23T06:42:09Z",
+    "name": "GLL Grand Slam",
+    "series": [
+      {
+        "begin_at": "2019-07-19T14:00:00Z",
+        "description": null,
+        "end_at": "2019-07-21T20:05:00Z",
+        "full_name": "2019",
+        "id": 1818,
+        "league_id": 4231,
+        "modified_at": "2019-07-21T22:38:37Z",
+        "name": "",
+        "prizepool": "300000 United States Dollar",
+        "season": null,
+        "slug": "pubg-gll-grand-slam-2019",
+        "winner_id": 125715,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "pubg-gll-grand-slam",
+    "url": "https://www.grandslam.gg/",
+    "videogame": {
+      "current_version": null,
+      "id": 20,
+      "name": "PUBG",
+      "slug": "pubg"
+    }
+  },
+  {
+    "id": 4230,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4230/Rift_Rivals_Red_2019.png",
+    "live_supported": true,
+    "modified_at": "2019-06-26T07:06:28Z",
+    "name": "Rift Rivals: LCK vs LPL vs LMS/VCS",
+    "series": [
+      {
+        "begin_at": "2019-07-04T07:00:00Z",
+        "description": null,
+        "end_at": "2019-07-07T13:00:00Z",
+        "full_name": "2019",
+        "id": 1809,
+        "league_id": 4230,
+        "modified_at": "2019-06-30T17:52:26Z",
+        "name": null,
+        "prizepool": null,
+        "season": null,
+        "slug": "league-of-legends-rift-rivals-lck-vs-lppl-vs-lms-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "league-of-legends-rift-rivals-lck-vs-lpl-vs-lms-vcs",
+    "url": null,
+    "videogame": {
+      "current_version": "9.19.1",
+      "id": 1,
+      "name": "LoL",
+      "slug": "league-of-legends"
+    }
+  },
+  {
+    "id": 4229,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4229/600px-MOCHE_XL_eSports.png",
+    "live_supported": false,
+    "modified_at": "2019-06-12T13:28:31Z",
+    "name": "Moche XL Esports",
+    "series": [
+      {
+        "begin_at": "2019-06-15T13:30:00Z",
+        "description": null,
+        "end_at": "2019-06-16T20:00:00Z",
+        "full_name": "2019",
+        "id": 1813,
+        "league_id": 4229,
+        "modified_at": "2019-06-24T13:50:12Z",
+        "name": "",
+        "prizepool": "75000 United States Dollar",
+        "season": null,
+        "slug": "cs-go-moche-xl-esports-2019",
+        "winner_id": 3390,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-moche-xl-esports",
+    "url": "https://www.moche.pt/esports/moche-xl",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4228,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4228/image.png",
+    "live_supported": false,
+    "modified_at": "2019-05-27T08:57:11Z",
+    "name": "LCS Academy",
+    "series": [
+      {
+        "begin_at": "2019-01-17T00:00:00Z",
+        "description": "2019 NA Academy Spring Split",
+        "end_at": "2019-04-06T01:39:00Z",
+        "full_name": "Spring 2019",
+        "id": 1760,
+        "league_id": 4228,
+        "modified_at": "2019-05-27T08:57:43Z",
+        "name": "",
+        "prizepool": null,
+        "season": "Spring",
+        "slug": "league-of-legends-na-academy-spring-2019",
+        "winner_id": 1594,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-05-29T22:00:00Z",
+        "description": null,
+        "end_at": "2019-07-26T22:00:00Z",
+        "full_name": "Summer 2019",
+        "id": 1803,
+        "league_id": 4228,
+        "modified_at": "2019-05-27T08:57:31Z",
+        "name": null,
+        "prizepool": null,
+        "season": "Summer",
+        "slug": "league-of-legends-na-academy-summer-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "league-of-legends-lcs-academy",
+    "url": "https://nexus.leagueoflegends.com/en-us/esports/",
+    "videogame": {
+      "current_version": "9.19.1",
+      "id": 1,
+      "name": "LoL",
+      "slug": "league-of-legends"
+    }
+  },
+  {
+    "id": 4227,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4227/609px-ESL_India_Premiership_2018.png",
+    "live_supported": false,
+    "modified_at": "2019-05-13T09:36:16Z",
+    "name": "ESL India Premiership",
+    "series": [
+      {
+        "begin_at": "2019-04-25T22:00:00Z",
+        "description": null,
+        "end_at": "2019-05-19T18:00:00Z",
+        "full_name": "Summer masters league 2019",
+        "id": 1788,
+        "league_id": 4227,
+        "modified_at": "2019-05-28T16:12:42Z",
+        "name": "Summer Masters League",
+        "prizepool": null,
+        "season": "",
+        "slug": "dota-2-esl-india-premiership-summer-masters-league-summer-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-esl-india-premiership",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4226,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4226/LDL_logo.png",
+    "live_supported": false,
+    "modified_at": "2019-06-20T07:57:08Z",
+    "name": "LDL",
+    "series": [
+      {
+        "begin_at": "2019-02-24T23:00:00Z",
+        "description": null,
+        "end_at": "2019-05-11T12:00:00Z",
+        "full_name": "Spring 2019",
+        "id": 1786,
+        "league_id": 4226,
+        "modified_at": "2019-09-25T16:38:41Z",
+        "name": "",
+        "prizepool": null,
+        "season": "Spring",
+        "slug": "league-of-legends-ldl-spring-2019",
+        "winner_id": 201,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-06-18T22:00:00Z",
+        "description": null,
+        "end_at": "2019-09-08T18:00:00Z",
+        "full_name": "Summer 2019",
+        "id": 1832,
+        "league_id": 4226,
+        "modified_at": "2019-09-25T16:38:19Z",
+        "name": "",
+        "prizepool": null,
+        "season": "Summer",
+        "slug": "league-of-legends-ldl-summer-2019",
+        "winner_id": 125986,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "league-of-legends-ldl",
+    "url": "https://liquipedia.net/leagueoflegends/LDL/2019/Spring",
+    "videogame": {
+      "current_version": "9.19.1",
+      "id": 1,
+      "name": "LoL",
+      "slug": "league-of-legends"
+    }
+  },
+  {
+    "id": 4225,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4225/NEST.png",
+    "live_supported": true,
+    "modified_at": "2019-04-25T06:12:20Z",
+    "name": "NEST",
+    "series": [
+      {
+        "begin_at": "2018-11-14T23:00:00Z",
+        "description": null,
+        "end_at": "2018-11-18T19:00:00Z",
+        "full_name": "2018",
+        "id": 1781,
+        "league_id": 4225,
+        "modified_at": "2019-09-25T12:41:53Z",
+        "name": null,
+        "prizepool": "670000 Chinese Yuan",
+        "season": null,
+        "slug": "league-of-legends-nest-2018",
+        "winner_id": 318,
+        "winner_type": "Team",
+        "year": 2018
+      },
+      {
+        "begin_at": "2019-04-21T22:00:00Z",
+        "description": null,
+        "end_at": "2019-05-25T22:00:00Z",
+        "full_name": "2019",
+        "id": 1782,
+        "league_id": 4225,
+        "modified_at": "2019-09-25T12:42:17Z",
+        "name": null,
+        "prizepool": "680000 Chinese Yuan",
+        "season": null,
+        "slug": "league-of-legends-nest-2019",
+        "winner_id": 126056,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "league-of-legends-nest",
+    "url": "https://www.cga.cn/nest2019",
+    "videogame": {
+      "current_version": "9.19.1",
+      "id": 1,
+      "name": "LoL",
+      "slug": "league-of-legends"
+    }
+  },
+  {
+    "id": 4224,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4224/Adrenaline_Cyber_League.png",
+    "live_supported": false,
+    "modified_at": "2019-04-18T10:17:32Z",
+    "name": "Adrenaline Cyber League",
+    "series": [
+      {
+        "begin_at": "2017-10-14T22:00:00Z",
+        "description": null,
+        "end_at": "2017-11-22T19:00:00Z",
+        "full_name": "2017",
+        "id": 1780,
+        "league_id": 4224,
+        "modified_at": "2019-04-19T08:02:14Z",
+        "name": null,
+        "prizepool": null,
+        "season": null,
+        "slug": "dota-2-adrenaline-cyber-league-2017",
+        "winner_id": 1699,
+        "winner_type": "Team",
+        "year": 2017
+      },
+      {
+        "begin_at": "2019-04-17T22:00:00Z",
+        "description": null,
+        "end_at": "2019-05-27T18:00:00Z",
+        "full_name": "2019",
+        "id": 1779,
+        "league_id": 4224,
+        "modified_at": "2019-06-03T10:08:41Z",
+        "name": null,
+        "prizepool": null,
+        "season": null,
+        "slug": "dota-2-adrenaline-cyber-league-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-adrenaline-cyber-league",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4223,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4223/FACEIT_Global_Summit_2019.png",
+    "live_supported": false,
+    "modified_at": "2019-08-23T06:42:07Z",
+    "name": "FACEIT Global Summit",
+    "series": [
+      {
+        "begin_at": "2019-04-16T11:00:00Z",
+        "description": null,
+        "end_at": "2019-04-21T18:05:00Z",
+        "full_name": "2019",
+        "id": 1777,
+        "league_id": 4223,
+        "modified_at": "2019-06-24T09:59:54Z",
+        "name": "",
+        "prizepool": "400000 United States Dollar",
+        "season": null,
+        "slug": "pubg-faceit-global-summit-2019",
+        "winner_id": 125706,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "pubg-faceit-global-summit",
+    "url": "https://www.faceitglobalsummit.com/",
+    "videogame": {
+      "current_version": null,
+      "id": 20,
+      "name": "PUBG",
+      "slug": "pubg"
+    }
+  },
+  {
+    "id": 4222,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4222/600px-World_Showdown_of_Esports_banner.png",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:11:06Z",
+    "name": "World Showdown of Esports",
+    "series": [
+      {
+        "begin_at": "2019-04-12T22:00:00Z",
+        "description": null,
+        "end_at": "2019-04-13T22:00:00Z",
+        "full_name": "Season 6 2019",
+        "id": 1773,
+        "league_id": 4222,
+        "modified_at": "2019-04-15T08:03:24Z",
+        "name": null,
+        "prizepool": null,
+        "season": "6",
+        "slug": "dota-2-world-showdown-of-esports-6-2019",
+        "winner_id": 3385,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-world-showdown-of-esports",
+    "url": "",
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4221,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4221/Qiamericaslogo.png",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:10:41Z",
+    "name": "Qi Invitational",
+    "series": [
+      {
+        "begin_at": "2019-04-05T22:00:00Z",
+        "description": null,
+        "end_at": "2019-04-08T22:00:00Z",
+        "full_name": "Americas 2019",
+        "id": 1772,
+        "league_id": 4221,
+        "modified_at": "2019-04-09T06:44:13Z",
+        "name": "Americas",
+        "prizepool": null,
+        "season": null,
+        "slug": "dota-2-qi-invitational-americas-2019",
+        "winner_id": 3372,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-qi-invitational",
+    "url": "",
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4220,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4220/600px-Feng_Ye_Professional_Invitational.jpg",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:10:15Z",
+    "name": "Feng Ye Professional Invitational Competition",
+    "series": [
+      {
+        "begin_at": "2019-04-06T22:00:00Z",
+        "description": null,
+        "end_at": "2019-04-15T22:00:00Z",
+        "full_name": "Season 1 2019",
+        "id": 1771,
+        "league_id": 4220,
+        "modified_at": "2019-04-16T16:30:36Z",
+        "name": null,
+        "prizepool": null,
+        "season": "1",
+        "slug": "dota-2-feng-ye-professional-invitational-competition-1-2019",
+        "winner_id": 1725,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-05-16T22:00:00Z",
+        "description": null,
+        "end_at": "2019-05-29T18:00:00Z",
+        "full_name": "Season 2 2019",
+        "id": 1794,
+        "league_id": 4220,
+        "modified_at": "2019-07-30T13:25:07Z",
+        "name": null,
+        "prizepool": null,
+        "season": "2",
+        "slug": "dota-2-feng-ye-professional-invitational-competition-2-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-feng-ye-professional-invitational-competition",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4219,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4219/800px-Cobx_Master_2019_Phase_II.jpg",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:09:58Z",
+    "name": "Cobx Masters",
+    "series": [
+      {
+        "begin_at": "2019-04-04T22:00:00Z",
+        "description": null,
+        "end_at": "2019-04-06T22:00:00Z",
+        "full_name": "Phase ii 2019",
+        "id": 1770,
+        "league_id": 4219,
+        "modified_at": "2019-04-09T08:35:28Z",
+        "name": "Phase II",
+        "prizepool": null,
+        "season": null,
+        "slug": "dota-2-cobx-masters-phase-ii-2019",
+        "winner_id": 3426,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-cobx-masters",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4218,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4218/600px-American_Avenger_Cup.jpg",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:09:34Z",
+    "name": "American Avengers Cup",
+    "series": [
+      {
+        "begin_at": "2019-04-04T22:00:00Z",
+        "description": null,
+        "end_at": "2019-04-11T22:00:00Z",
+        "full_name": "Season 1 2019",
+        "id": 1769,
+        "league_id": 4218,
+        "modified_at": "2019-04-07T09:47:17Z",
+        "name": null,
+        "prizepool": null,
+        "season": "1",
+        "slug": "dota-2-americans-avengers-cup-1-2019",
+        "winner_id": null,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-americans-avengers-cup",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4217,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4217/China_Future_Cup.jpg",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:09:18Z",
+    "name": "China Future Cup",
+    "series": [
+      {
+        "begin_at": "2019-04-03T22:00:00Z",
+        "description": null,
+        "end_at": "2019-04-13T22:00:00Z",
+        "full_name": "Season 1 2019",
+        "id": 1768,
+        "league_id": 4217,
+        "modified_at": "2019-04-15T14:57:10Z",
+        "name": null,
+        "prizepool": null,
+        "season": "1",
+        "slug": "dota-2-futur-cup-1-2019",
+        "winner_id": 125826,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-futur-cup",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4216,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4216/600px-Betway_Asian_Dota_2_League.png",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:08:50Z",
+    "name": "Betway Asian Dota 2 League",
+    "series": [
+      {
+        "begin_at": "2019-04-03T22:00:00Z",
+        "description": null,
+        "end_at": "2019-04-19T22:00:00Z",
+        "full_name": "Season 1 2019",
+        "id": 1764,
+        "league_id": 4216,
+        "modified_at": "2019-04-30T09:09:40Z",
+        "name": null,
+        "prizepool": null,
+        "season": "1",
+        "slug": "dota-2-betway-asian-dota-2-league-1-2019",
+        "winner_id": 1662,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-betway-asian-dota-2-league",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4215,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4215/Dota2_Rainbow_Cup.png",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:08:26Z",
+    "name": "Rainbow Cup",
+    "series": [
+      {
+        "begin_at": "2019-03-16T23:00:00Z",
+        "description": null,
+        "end_at": "2019-03-30T23:00:00Z",
+        "full_name": "Season 1 2019",
+        "id": 1763,
+        "league_id": 4215,
+        "modified_at": "2019-04-03T09:11:24Z",
+        "name": null,
+        "prizepool": null,
+        "season": "1",
+        "slug": "dota-2-rainbow-cup-1-2019",
+        "winner_id": 96570,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-04-14T22:00:00Z",
+        "description": null,
+        "end_at": "2019-04-25T18:00:00Z",
+        "full_name": "Season 2 2019",
+        "id": 1778,
+        "league_id": 4215,
+        "modified_at": "2019-04-30T09:29:12Z",
+        "name": null,
+        "prizepool": null,
+        "season": "2",
+        "slug": "dota-2-rainbow-cup-2-2019",
+        "winner_id": 2061,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-rainbow-cup",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4214,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4214/600px-Thunder_Fire_Spring_League_logo.jpg",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:08:05Z",
+    "name": "Thunder Fire",
+    "series": [
+      {
+        "begin_at": "2019-03-03T23:00:00Z",
+        "description": null,
+        "end_at": "2019-03-13T19:00:00Z",
+        "full_name": "Spring league spring 2019",
+        "id": 1755,
+        "league_id": 4214,
+        "modified_at": "2019-03-13T13:23:33Z",
+        "name": "Spring League",
+        "prizepool": null,
+        "season": "Spring",
+        "slug": "dota-2-thunder-fire-spring-league-spring-2019",
+        "winner_id": 1652,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-thunder-fire",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4213,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4213/_.png",
+    "live_supported": true,
+    "modified_at": "2019-06-21T12:42:38Z",
+    "name": "LVP SLO",
+    "series": [
+      {
+        "begin_at": "2019-01-30T17:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Spring 2019",
+        "id": 1748,
+        "league_id": 4213,
+        "modified_at": "2019-09-25T12:38:21Z",
+        "name": null,
+        "prizepool": null,
+        "season": "Spring",
+        "slug": "league-of-legends-lvp-slo-spring-2019",
+        "winner_id": 125735,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-06-03T16:00:00Z",
+        "description": null,
+        "end_at": "2019-09-02T18:00:00Z",
+        "full_name": "Summer 2019",
+        "id": 1811,
+        "league_id": 4213,
+        "modified_at": "2019-09-01T22:47:34Z",
+        "name": null,
+        "prizepool": null,
+        "season": "Summer",
+        "slug": "league-of-legends-lvp-slo-summer-2019",
+        "winner_id": 3339,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "league-of-legends-lvp-slo",
+    "url": null,
+    "videogame": {
+      "current_version": "9.19.1",
+      "id": 1,
+      "name": "LoL",
+      "slug": "league-of-legends"
+    }
+  },
+  {
+    "id": 4212,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4212/900px-PUBG_Europe_League_logoB.png",
+    "live_supported": false,
+    "modified_at": "2019-08-23T06:42:04Z",
+    "name": "Europe League",
+    "series": [
+      {
+        "begin_at": "2019-02-14T23:00:00Z",
+        "description": null,
+        "end_at": "2019-04-06T22:00:00Z",
+        "full_name": "2019",
+        "id": 1747,
+        "league_id": 4212,
+        "modified_at": "2019-10-06T19:39:39Z",
+        "name": null,
+        "prizepool": null,
+        "season": null,
+        "slug": "pubg-europe-league-2019",
+        "winner_id": null,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "pubg-europe-league",
+    "url": "https://pubgesports.eu/",
+    "videogame": {
+      "current_version": null,
+      "id": 20,
+      "name": "PUBG",
+      "slug": "pubg"
+    }
+  },
+  {
+    "id": 4211,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4211/Asia_Pacific_Predator_League_2019.png",
+    "live_supported": false,
+    "modified_at": "2019-02-18T17:17:20Z",
+    "name": "Asia Pacific Predator League",
+    "series": [
+      {
+        "begin_at": "2018-01-17T23:00:00Z",
+        "description": null,
+        "end_at": "2018-01-20T23:00:00Z",
+        "full_name": "2018",
+        "id": 1746,
+        "league_id": 4211,
+        "modified_at": "2019-04-15T15:15:33Z",
+        "name": null,
+        "prizepool": null,
+        "season": null,
+        "slug": "dota-2-asia-pacific-predator-league-2018",
+        "winner_id": 1714,
+        "winner_type": "Team",
+        "year": 2018
+      },
+      {
+        "begin_at": "2019-02-14T23:00:00Z",
+        "description": null,
+        "end_at": "2019-02-16T23:00:00Z",
+        "full_name": "2019",
+        "id": 1745,
+        "league_id": 4211,
+        "modified_at": "2019-02-13T10:11:52Z",
+        "name": null,
+        "prizepool": null,
+        "season": null,
+        "slug": "dota-2-asia-pacific-predator-league-2019",
+        "winner_id": null,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-asia-pacific-predator-league",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4210,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4210/Asia_Pro_League.jpg",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:06:50Z",
+    "name": "Asia Pro League",
+    "series": [
+      {
+        "begin_at": "2018-09-30T22:00:00Z",
+        "description": null,
+        "end_at": "2018-10-14T22:00:00Z",
+        "full_name": "Season 1 2018",
+        "id": 1743,
+        "league_id": 4210,
+        "modified_at": "2019-04-16T10:04:39Z",
+        "name": null,
+        "prizepool": null,
+        "season": "1",
+        "slug": "dota-2-asia-pro-league-1-2018",
+        "winner_id": 1687,
+        "winner_type": "Team",
+        "year": 2018
+      },
+      {
+        "begin_at": "2019-02-13T23:00:00Z",
+        "description": null,
+        "end_at": "2019-02-19T23:00:00Z",
+        "full_name": "Season 2 2019",
+        "id": 1744,
+        "league_id": 4210,
+        "modified_at": "2019-02-13T10:03:28Z",
+        "name": null,
+        "prizepool": null,
+        "season": "2",
+        "slug": "dota-2-asia-pro-league-2-2019",
+        "winner_id": null,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-asia-pro-league",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4209,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4209/65556200_2362651830655163_2764262559686066176_n.jpg",
+    "live_supported": false,
+    "modified_at": "2019-08-26T07:43:28Z",
+    "name": "Arctic Invitational",
+    "series": [
+      {
+        "begin_at": "2019-09-14T11:00:00Z",
+        "description": null,
+        "end_at": "2019-09-14T21:34:00Z",
+        "full_name": "2019",
+        "id": 1742,
+        "league_id": 4209,
+        "modified_at": "2019-09-15T10:24:46Z",
+        "name": "",
+        "prizepool": "100000 Euro",
+        "season": null,
+        "slug": "cs-go-arctic-invitational-2019",
+        "winner_id": 124530,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-arctic-invitational",
+    "url": "https://arcticinvitational.fi/",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4208,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4208/521px-ESL_One_2019.png",
+    "live_supported": true,
+    "modified_at": "2019-06-03T10:02:30Z",
+    "name": "ESL One",
+    "series": [],
+    "slug": "cs-go-esl-one",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4207,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4207/Charleroi_Esports.png",
+    "live_supported": true,
+    "modified_at": "2019-06-03T10:01:42Z",
+    "name": "Charleroi Esports",
+    "series": [
+      {
+        "begin_at": "2019-04-12T10:00:00Z",
+        "description": null,
+        "end_at": "2019-04-14T19:43:00Z",
+        "full_name": "2019",
+        "id": 1738,
+        "league_id": 4207,
+        "modified_at": "2019-04-14T20:03:36Z",
+        "name": "",
+        "prizepool": null,
+        "season": null,
+        "slug": "cs-go-charleroi-esports-2019",
+        "winner_id": 3455,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-charleroi-esports",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4205,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4205/800px-Intel-challenge-logo.png",
+    "live_supported": true,
+    "modified_at": "2019-06-03T10:04:28Z",
+    "name": "Intel Challenge",
+    "series": [
+      {
+        "begin_at": "2019-02-28T11:00:00Z",
+        "description": null,
+        "end_at": "2019-03-02T13:43:00Z",
+        "full_name": "Katowice 2019",
+        "id": 1725,
+        "league_id": 4205,
+        "modified_at": "2019-03-03T23:04:37Z",
+        "name": "Katowice",
+        "prizepool": null,
+        "season": null,
+        "slug": "cs-go-intel-challenge-katowice-katowice-2019",
+        "winner_id": 125738,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-intel-challenge-katowice",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4203,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4203/GG.Bet_Ice_Challenge.png",
+    "live_supported": true,
+    "modified_at": "2019-04-10T09:38:09Z",
+    "name": "GG.Bet Ice Challenge",
+    "series": [
+      {
+        "begin_at": "2019-02-04T23:00:00Z",
+        "description": null,
+        "end_at": "2019-02-07T14:46:00Z",
+        "full_name": "London 2019",
+        "id": 1718,
+        "league_id": 4203,
+        "modified_at": "2019-02-07T16:12:50Z",
+        "name": "London",
+        "prizepool": null,
+        "season": null,
+        "slug": "cs-go-gg-bet-ice-challenge-london-2019",
+        "winner_id": 3211,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "cs-go-gg-bet-ice-challenge",
+    "url": "https://www.hltv.org/events/4406/ice-challenge",
+    "videogame": {
+      "current_version": null,
+      "id": 3,
+      "name": "CS:GO",
+      "slug": "cs-go"
+    }
+  },
+  {
+    "id": 4202,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4202/PKL_2019_logo.png",
+    "live_supported": false,
+    "modified_at": "2019-08-23T06:42:03Z",
+    "name": "Korea League",
+    "series": [
+      {
+        "begin_at": null,
+        "description": null,
+        "end_at": null,
+        "full_name": "2019",
+        "id": 1716,
+        "league_id": 4202,
+        "modified_at": "2019-08-20T09:51:20Z",
+        "name": "",
+        "prizepool": null,
+        "season": null,
+        "slug": "pubg-pubg-korea-league-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "pubg-pubg-korea-league",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 20,
+      "name": "PUBG",
+      "slug": "pubg"
+    }
+  },
+  {
+    "id": 4201,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4201/_.png",
+    "live_supported": false,
+    "modified_at": "2019-08-23T06:42:06Z",
+    "name": "National League",
+    "series": [
+      {
+        "begin_at": "2019-02-02T01:00:00Z",
+        "description": null,
+        "end_at": "2019-09-30T02:30:00Z",
+        "full_name": "2019",
+        "id": 1715,
+        "league_id": 4201,
+        "modified_at": "2019-09-01T14:48:51Z",
+        "name": "",
+        "prizepool": null,
+        "season": "",
+        "slug": "pubg-national-pubg-league-phase-1-2019",
+        "winner_id": null,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "pubg-national-pubg-league",
+    "url": "https://na.pubgesports.com/",
+    "videogame": {
+      "current_version": null,
+      "id": 20,
+      "name": "PUBG",
+      "slug": "pubg"
+    }
+  },
+  {
+    "id": 4200,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4200/609px-ESL_Indonesia_Championship.png",
+    "live_supported": false,
+    "modified_at": "2019-02-28T15:58:46Z",
+    "name": "ESL Indonesia Championship",
+    "series": [],
+    "slug": "dota-2-esl-indonesia-championship",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  },
+  {
+    "id": 4199,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4199/600px-LLA_logo.png",
+    "live_supported": true,
+    "modified_at": "2019-08-06T09:30:52Z",
+    "name": "LLA",
+    "series": [
+      {
+        "begin_at": "2019-01-19T20:00:00Z",
+        "description": "Liga Movistar Latinoamérica - Apertura 2019",
+        "end_at": "2019-03-26T14:00:00Z",
+        "full_name": "Opening 2019",
+        "id": 1708,
+        "league_id": 4199,
+        "modified_at": "2019-09-25T12:37:36Z",
+        "name": "",
+        "prizepool": null,
+        "season": "Opening",
+        "slug": "league-of-legends-lla-opening-2019",
+        "winner_id": 147,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-06-07T22:00:00Z",
+        "description": null,
+        "end_at": "2019-08-29T22:00:00Z",
+        "full_name": "Closing 2019",
+        "id": 1801,
+        "league_id": 4199,
+        "modified_at": "2019-09-01T22:56:39Z",
+        "name": null,
+        "prizepool": null,
+        "season": "Closing",
+        "slug": "league-of-legends-lla-opening-2019-799c861e-c33d-42ac-8e89-185de2aadfb4",
+        "winner_id": 147,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "league-of-legends-lla",
+    "url": null,
+    "videogame": {
+      "current_version": "9.19.1",
+      "id": 1,
+      "name": "LoL",
+      "slug": "league-of-legends"
+    }
+  },
+  {
+    "id": 4198,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4198/LCS_2019_Logo.png",
+    "live_supported": true,
+    "modified_at": "2019-03-04T01:28:51Z",
+    "name": "LCS",
+    "series": [
+      {
+        "begin_at": "2019-01-26T22:00:00Z",
+        "description": "LCS 2019 Spring Split",
+        "end_at": "2019-04-14T00:57:00Z",
+        "full_name": "Spring 2019",
+        "id": 1705,
+        "league_id": 4198,
+        "modified_at": "2019-04-14T14:52:38Z",
+        "name": "",
+        "prizepool": null,
+        "season": "Spring",
+        "slug": "league-of-legends-lcs-spring-2019",
+        "winner_id": 390,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-05-31T22:00:00Z",
+        "description": null,
+        "end_at": null,
+        "full_name": "Summer 2019",
+        "id": 1795,
+        "league_id": 4198,
+        "modified_at": "2019-08-26T12:35:03Z",
+        "name": "",
+        "prizepool": "200000 United States Dollar",
+        "season": "Summer",
+        "slug": "league-of-legends-lcs-summer-2019",
+        "winner_id": 390,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "league-of-legends-lcs",
+    "url": "",
+    "videogame": {
+      "current_version": "9.19.1",
+      "id": 1,
+      "name": "LoL",
+      "slug": "league-of-legends"
+    }
+  },
+  {
+    "id": 4197,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4197/LEC-2019.png",
+    "live_supported": true,
+    "modified_at": "2019-03-03T01:22:54Z",
+    "name": "LEC",
+    "series": [
+      {
+        "begin_at": "2019-01-18T17:00:00Z",
+        "description": "2019 LEC Spring Split",
+        "end_at": "2019-04-14T17:22:00Z",
+        "full_name": "Spring 2019",
+        "id": 1704,
+        "league_id": 4197,
+        "modified_at": "2019-04-15T16:11:21Z",
+        "name": "",
+        "prizepool": null,
+        "season": "Spring",
+        "slug": "league-of-legends-lec-spring-2019",
+        "winner_id": 88,
+        "winner_type": "Team",
+        "year": 2019
+      },
+      {
+        "begin_at": "2019-06-06T22:00:00Z",
+        "description": null,
+        "end_at": "2019-09-19T22:00:00Z",
+        "full_name": "Summer  2019",
+        "id": 1805,
+        "league_id": 4197,
+        "modified_at": "2019-08-24T06:58:47Z",
+        "name": null,
+        "prizepool": null,
+        "season": "Summer ",
+        "slug": "league-of-legends-lec-summer-2019",
+        "winner_id": null,
+        "winner_type": null,
+        "year": 2019
+      }
+    ],
+    "slug": "league-of-legends-lec",
+    "url": null,
+    "videogame": {
+      "current_version": "9.19.1",
+      "id": 1,
+      "name": "LoL",
+      "slug": "league-of-legends"
+    }
+  },
+  {
+    "id": 4196,
+    "image_url": "https://cdn.pandascore.co/images/league/image/4196/QIWI_TEAM_PLAY_Season_3_dota.jpg",
+    "live_supported": false,
+    "modified_at": "2019-07-08T09:03:49Z",
+    "name": "QIWI Teamplay",
+    "series": [
+      {
+        "begin_at": "2019-01-06T23:00:00Z",
+        "description": null,
+        "end_at": "2019-01-09T23:00:00Z",
+        "full_name": "Season 3 2019",
+        "id": 1702,
+        "league_id": 4196,
+        "modified_at": "2019-01-14T18:34:25Z",
+        "name": null,
+        "prizepool": null,
+        "season": "3",
+        "slug": "dota-2-qiwi-teamplay-3-2019",
+        "winner_id": 1768,
+        "winner_type": "Team",
+        "year": 2019
+      }
+    ],
+    "slug": "dota-2-qiwi-teamplay",
+    "url": null,
+    "videogame": {
+      "current_version": null,
+      "id": 4,
+      "name": "Dota 2",
+      "slug": "dota-2"
+    }
+  }
+]
+
+}

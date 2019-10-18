@@ -57,10 +57,10 @@ public class Main4{
 		leagueClass.addSubClass(pubgLeagueClass);
 
 		// On ajoute toutes les leagues
-		JSONArray leaguesJSON = getArrayFromName("csgo_players", "leagues");
+		JSONArray leaguesJSON = getArrayFromName("csgo_leagues", "leagues");
 		addEveryLeague(model, csgoLeagueClass, leagueClass, leaguesJSON, nameProp, idProp, typeProp, videogameProp,model.getResource(namespace+ URIref.encode("csgo")));
 
-		leaguesJSON = getArrayFromName("dota_leagues", "leagues");
+		leaguesJSON = getArrayFromName("dota2_leagues", "leagues");
 		addEveryLeague(model, dotaLeagueClass, leagueClass, leaguesJSON, nameProp, idProp, typeProp, videogameProp,model.getResource(namespace+URIref.encode("dota2")));
 
 		leaguesJSON = getArrayFromName("lol_leagues", "leagues");
@@ -92,7 +92,7 @@ public class Main4{
 		JSONArray playersJSON = getArrayFromName("csgo_players", "players");
 		addEveryPlayer(model, csgoPlayerClass, playerClass, playersJSON, nameProp, idProp, typeProp);
 
-		playersJSON = getArrayFromName("dota_players", "players");
+		playersJSON = getArrayFromName("dota2_players", "players");
 		addEveryPlayer(model, dotaPlayerClass, playerClass, playersJSON, nameProp, idProp, typeProp);
 
 		playersJSON = getArrayFromName("lol_players", "players");
@@ -125,7 +125,7 @@ public class Main4{
 		JSONArray teamsJSON = getArrayFromName("csgo_teams", "teams");
 		addEveryTeam(model, teamClass, csgoTeamClass, teamsJSON, nameProp, idProp, typeProp, playersProp);
 
-		teamsJSON = getArrayFromName("dota_teams", "teams");
+		teamsJSON = getArrayFromName("dota2_teams", "teams");
 		addEveryTeam(model, teamClass, dotaTeamClass, teamsJSON, nameProp, idProp, typeProp, playersProp);
 
 		teamsJSON = getArrayFromName("lol_teams", "teams");
