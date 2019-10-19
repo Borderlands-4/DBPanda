@@ -188,6 +188,31 @@ public class Main4{
 		addEveryTeam(model, teamClass, owTeamClass, teamsJSON, nameProp, idProp, typeProp, playerProp);
 
 		teamsJSON = getArrayFromName("pubg_teams", "teams");
+		addEveryTeam(model, teamClass, pubgTeamClass, teamsJSON, nameProp, idProp, typeProp, playerProp);
+
+		//Ajout des matchs
+		ObjectProperty opponentProp = model.createObjectProperty(namespace+"opponents");
+		ObjectProperty playedProp = model.createObjectProperty(namespace+"played");
+		playedProp.addInverseOf(opponentProp);
+		OntClass matchClass = model.createClass(namespace+"match");
+		JSONArray matchesJSON;
+
+		matchesJSON = getArrayFromName("csgo_matches", "matches");
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, gameProp, model.getResource(namespace+URIref.encode("csgo")));
+
+		matchesJSON = getArrayFromName("dota2_matches", "matches");
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, gameProp, model.getResource(namespace+URIref.encode("dota2")));
+
+		matchesJSON = getArrayFromName("lol_matches", "matches");
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, gameProp, model.getResource(namespace+URIref.encode("lol")));
+
+		matchesJSON = getArrayFromName("ow_matches", "matches");
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, gameProp, model.getResource(namespace+URIref.encode("ow")));
+
+		matchesJSON = getArrayFromName("pubg_matches", "matches");
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, gameProp, model.getResource(namespace+URIref.encode("pubg")));
+
+
 		//On affiche le modèle dans la console en format XML/RDF (par défaut)
 		model.write(System.out);
 		String fileName = "modele.nt";
@@ -347,6 +372,33 @@ public class Main4{
 		}
 
 	}
+	public static void addEveryMatch(OntModel model, OntClass matchClass, JSONArray matchesJSON, Property nameProp, Property idProp, Property typeProp, Property playedProp, Property gameProp, Resource videogameResource) {
+		JSONObject matchJSON;
+		Resource resourceMatch;
+		JSONArray opponentsJSON;
+		JSONObject opponentJSON;
+		Resource opponentResource;
+		for(int i = 0 ; i<matchesJSON.size() ; i++){
+			matchJSON = (JSONObject) matchesJSON.get(i);
+			resourceMatch = model.getResource(namespace+URIref.encode(matchJSON.get("slug").toString()));
+			resourceMatch.addProperty(idProp, matchJSON.get("id").toString());
+			resourceMatch.addProperty(nameProp, matchJSON.get("name").toString().replace(" ", ""));
+			resourceMatch.addProperty(typeProp, matchClass);
+			//resourceTournament.addProperty(typeProp, tournamentSubClass);
+			resourceMatch.addProperty(gameProp, videogameResource);
+			opponentsJSON = (JSONArray) matchJSON.get("opponents");
+			for(int j = 0 ; j < opponentsJSON.size() ; j++){
+
+				opponentJSON = (JSONObject) ((JSONObject)opponentsJSON.get(j)).get("opponent");
+				if((opponentJSON.get("slug"))!=null){
+					opponentResource = model.getResource(namespace+URIref.encode((opponentJSON.get("slug").toString())));
+				}else{
+					opponentResource = model.getResource(namespace+URIref.encode((opponentJSON.get("name").toString())));
+				}
+
+				opponentResource.addProperty(playedProp, resourceMatch);
+			}
+
 		}
 
 	}
