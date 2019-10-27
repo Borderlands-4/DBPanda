@@ -1,3 +1,4 @@
+import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.datatypes.xsd.impl.XSDDateType;
 import org.apache.jena.ontology.ObjectProperty;
 import org.apache.jena.ontology.OntClass;
@@ -92,8 +93,8 @@ public class Main4{
 		playerClass.addSubClass(pubgPlayerClass);
 
 		/* On ajoute tous les joueurs des différents jeux au modèle
-		*	Pour cela on récupère le tableau JSON qui contient nos joueurs
-		*/
+		 *	Pour cela on récupère le tableau JSON qui contient nos joueurs
+		 */
 		JSONArray playersJSON = getArrayFromName("csgo_players", "players");
 		addEveryPlayer(model, csgoPlayerClass, playerClass, playersJSON, nameProp, idProp, typeProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("csgo")));
 
@@ -216,19 +217,19 @@ public class Main4{
 		JSONArray matchesJSON;
 
 		matchesJSON = getArrayFromName("csgo_matches", "matches");
-		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, model.getResource(namespace+URIref.encode("csgo")));
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, winnerProp, model.getResource(namespace+URIref.encode("csgo")));
 
 		matchesJSON = getArrayFromName("dota2_matches", "matches");
-		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, model.getResource(namespace+URIref.encode("dota2")));
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, winnerProp, model.getResource(namespace+URIref.encode("dota2")));
 
 		matchesJSON = getArrayFromName("lol_matches", "matches");
-		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, model.getResource(namespace+URIref.encode("lol")));
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, winnerProp, model.getResource(namespace+URIref.encode("lol")));
 
 		matchesJSON = getArrayFromName("ow_matches", "matches");
-		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, model.getResource(namespace+URIref.encode("ow")));
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, winnerProp, model.getResource(namespace+URIref.encode("ow")));
 
 		matchesJSON = getArrayFromName("pubg_matches", "matches");
-		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, model.getResource(namespace+URIref.encode("pubg")));
+		addEveryMatch(model, matchClass, matchesJSON, nameProp, idProp, typeProp, playedProp, videogameProp, dateProp, winnerProp, model.getResource(namespace+URIref.encode("pubg")));
 
 
 		//On affiche le modèle dans la console en format XML/RDF (par défaut)
@@ -382,23 +383,53 @@ public class Main4{
 			//resourceLeague.addProperty(videogameProp, videogameResource);
 		}
 	}
+	/*ResIterator it = model.listResourcesWithProperty(idProp, model.createLiteral("4233"));
+		Resource r = it.nextResource();
+		while(r !=null){
+			System.out.println(r.getLocalName());
+			r = it.nextResource();
+		}*/
 
-	public static void addEverySerie(OntModel model, OntClass serieClass, OntClass serieSubClass, JSONArray seriesJSON, Property nameProp, Property idProp, Property typeProp, Property serieProp, Property gameProp, Resource videogameResource) {
+	public static void addEverySerie(OntModel model, OntClass serieClass, OntClass serieSubClass, JSONArray seriesJSON, Property nameProp, Property idProp, Property typeProp, Property serieProp, Property gameProp, Property prizePoolProp, Property winnerProp, Resource videogameResource) {
 		JSONObject serieJSON;
 		Resource resourceSerie;
 		JSONArray tournamentsJSON;
 		JSONObject tournamentJSON;
 		Resource tournamentResource;
+		Resource prizePool;
+		Property value = model.createProperty(namespace+"value");
+		Property currency = model.createProperty(namespace+"currency");
+		Resource winner;
+		ResIterator it;
 		for(int i = 0 ; i<seriesJSON.size() ; i++){
 			serieJSON = (JSONObject) seriesJSON.get(i);
 			resourceSerie = model.getResource(namespace+URIref.encode(serieJSON.get("slug").toString()));
-
 			resourceSerie.addProperty(idProp, serieJSON.get("id").toString());
-			JSONObject infoSerie = (JSONObject) serieJSON.get("league");
-			resourceSerie.addProperty(nameProp, infoSerie.get("name").toString().replace(" ", ""));
+			//JSONObject infoSerie = (JSONObject) serieJSON.get("league");
+			if(serieJSON.get("name") != null){
+				resourceSerie.addProperty(nameProp, serieJSON.get("name").toString().replace(" ", ""));
+			}
 			resourceSerie.addProperty(typeProp, serieClass);
 			resourceSerie.addProperty(typeProp, serieSubClass);
 			resourceSerie.addProperty(gameProp, videogameResource);
+			if(serieJSON.get("winner_id") != null){
+				it = model.listResourcesWithProperty(idProp, model.createLiteral(serieJSON.get("winner_id").toString()));
+				while(it.hasNext()){
+					winner = it.nextResource();
+					if(winner.getPropertyResourceValue(typeProp).getLocalName().equals("player") || winner.getPropertyResourceValue(typeProp).getLocalName().equals("team")){
+						resourceSerie.addProperty(winnerProp, winner);
+						break;
+					}
+				}
+			}
+
+			if(serieJSON.get("prizepool") != null){
+				prizePool = model.createResource();
+				prizePool.addProperty(value,  model.createTypedLiteral(Integer.parseInt(serieJSON.get("prizepool").toString().replaceAll("[^0-9]", "")), XSDDatatype.XSDinteger));
+				prizePool.addProperty(currency, serieJSON.get("prizepool").toString().replaceAll("[0-9]", "").replaceFirst(" ",""));
+				resourceSerie.addProperty(prizePoolProp, prizePool);
+			}
+
 			tournamentsJSON = (JSONArray) serieJSON.get("tournaments");
 			for(int j = 0 ; j < tournamentsJSON.size() ; j++){
 				tournamentJSON = (JSONObject) tournamentsJSON.get(j);
@@ -409,12 +440,17 @@ public class Main4{
 		}
 
 	}
-	public static void addEveryTournament(OntModel model, OntClass tournamentClass, JSONArray tournamentsJSON, Property nameProp, Property idProp, Property typeProp, Property tournamentProp, Property gameProp, Resource videogameResource) {
+	public static void addEveryTournament(OntModel model, OntClass tournamentClass, JSONArray tournamentsJSON, Property nameProp, Property idProp, Property typeProp, Property tournamentProp, Property gameProp, Property prizePoolProp, Property winnerProp, Resource videogameResource) {
 		JSONObject tournamentJSON;
 		Resource resourceTournament;
 		JSONArray matchesJSON;
 		JSONObject matchJSON;
 		Resource matchResource;
+		Resource prizePool;
+		Property value = model.createProperty(namespace+"value");
+		Property currency = model.createProperty(namespace+"currency");
+		Resource winner;
+		ResIterator it;
 		for(int i = 0 ; i<tournamentsJSON.size() ; i++){
 			tournamentJSON = (JSONObject) tournamentsJSON.get(i);
 			resourceTournament = model.getResource(namespace+URIref.encode(tournamentJSON.get("slug").toString()));
@@ -429,17 +465,36 @@ public class Main4{
 				matchResource = model.createResource(namespace+URIref.encode((matchJSON.get("slug").toString())));
 				matchResource.addProperty(tournamentProp, resourceTournament);
 			}
+			if(tournamentJSON.get("winner_id") != null){
+				it = model.listResourcesWithProperty(idProp, model.createLiteral(tournamentJSON.get("winner_id").toString()));
+				while(it.hasNext()){
+					winner = it.nextResource();
+                    if(winner.getPropertyResourceValue(typeProp).getLocalName().equals("player") || winner.getPropertyResourceValue(typeProp).getLocalName().equals("team")){
+						resourceTournament.addProperty(winnerProp, winner);
+						break;
+					}
+				}
+			}
+
+			if(tournamentJSON.get("prizepool") != null){
+				prizePool = model.createResource();
+				prizePool.addProperty(value,  model.createTypedLiteral(Integer.parseInt(tournamentJSON.get("prizepool").toString().replaceAll("[^0-9]", "")), XSDDatatype.XSDinteger));
+				prizePool.addProperty(currency, tournamentJSON.get("prizepool").toString().replaceAll("[0-9]", "").replaceFirst(" ",""));
+				resourceTournament.addProperty(prizePoolProp, prizePool);
+			}
 
 		}
 
 	}
-	public static void addEveryMatch(OntModel model, OntClass matchClass, JSONArray matchesJSON, Property nameProp, Property idProp, Property typeProp, Property playedProp, Property gameProp, Property startedAtProp, Resource videogameResource) {
+	public static void addEveryMatch(OntModel model, OntClass matchClass, JSONArray matchesJSON, Property nameProp, Property idProp, Property typeProp, Property playedProp, Property gameProp, Property startedAtProp, Property winnerProp, Resource videogameResource) {
 		JSONObject matchJSON;
 		Resource resourceMatch;
 		JSONArray opponentsJSON;
 		JSONObject opponentJSON;
 		JSONObject opponentInfo;
 		Resource opponentResource;
+		Resource winner;
+		ResIterator it;
 		//LocalDate date;
 		//Calendar cal = Calendar.getInstance();
 		Literal date;
@@ -459,6 +514,16 @@ public class Main4{
 			resourceMatch.addProperty(typeProp, matchClass);
 			//resourceTournament.addProperty(typeProp, tournamentSubClass);
 			resourceMatch.addProperty(gameProp, videogameResource);
+			if(matchJSON.get("winner_id") != null){
+				it = model.listResourcesWithProperty(idProp, model.createLiteral(matchJSON.get("winner_id").toString()));
+				while(it.hasNext()){
+					winner = it.nextResource();
+					if(winner.getPropertyResourceValue(typeProp).getLocalName().equals("player") || winner.getPropertyResourceValue(typeProp).getLocalName().equals("team")){
+						resourceMatch.addProperty(winnerProp, winner);
+						break;
+					}
+				}
+			}
 			opponentsJSON = (JSONArray) matchJSON.get("opponents");
 			for(int j = 0 ; j < opponentsJSON.size() ; j++){
 				opponentInfo = ((JSONObject)opponentsJSON.get(j));
