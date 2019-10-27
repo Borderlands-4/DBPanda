@@ -15,17 +15,33 @@ public class JSONExtractor {
 	public static final String API_KEY="aTeHZcNGhS2SOR_Ff0Uh0Zw0ah3hp7d6ARrzE8GvXLYOmJK198o";
 
 	public static void main(String[] args) throws Exception {
-		// Initialization
-		String name = "pubg_teams";
-		String directory = "teams";
+		String[] games = {"csgo", "dota2", "lol", "ow", "pubg"};
+		String[] endpoint = {"series", "matches", "leagues", "players", "teams", "tournaments"};
+		String name;
+		String directory;
+		String jsonArray;
+		BufferedWriter writer;
+		for(int i = 0 ; i< games.length ; i++){
+			for(int j = 0 ; j < endpoint.length ; j++){
+				name = games[i] + "_" + endpoint[j];
+				directory = endpoint[j];
+				jsonArray = getJsonArray(name, "https://api.pandascore.co/"+games[i]+"/"+endpoint[j]);
+				writer = new BufferedWriter(new FileWriter("./src/main/resources/"+directory+"/"+name+".json"));
+				writer.write(jsonArray);
+				writer.close();
+			}
+		}
+		/*// Initialization
+		String name = "csgo_series";
+		String directory = "series";
 
 		// Retrieve json data from the API
-		String jsonArray = getJsonArray(name, "https://api.pandascore.co/pubg/teams");
+		String jsonArray = getJsonArray(name, "https://api.pandascore.co/csgo/series");
 
 		// Saving the data to a file
 		BufferedWriter writer = new BufferedWriter(new FileWriter("./src/main/resources/"+directory+"/"+name+".json"));
 		writer.write(jsonArray);
-		writer.close();
+		writer.close();*/
 	}
 
 
@@ -60,12 +76,12 @@ public class JSONExtractor {
 			int totalItems = Integer.valueOf(response.getFirstHeader("X-Total").getValue());
 
 			String tempString;
-
+			System.out.println(totalItems);
 			// Calculating the total number of pages
 			int totalPages = totalItems / pageSize + 1;
-
+			System.out.println(totalPages);
 			// Looping over the rest of the pages
-			for (int i = 1; i <= totalPages; i++) {
+			for (int i = 2; i <= totalPages; i++) {
 				request = new HttpGet(url + "?token=" + API_KEY + "&page[size]=" + pageSize + "&page[number]=" + i);
 				response = httpClient.execute(request);
 				entity = response.getEntity();
