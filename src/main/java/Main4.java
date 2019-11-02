@@ -52,32 +52,22 @@ public class Main4{
 
 		//Création de la classe league et de ses sous classes
 		OntClass leagueClass = model.createClass(namespace+"League");
-		OntClass csgoLeagueClass = model.createClass(namespace+"CSGO_League");
-		OntClass dotaLeagueClass = model.createClass(namespace+"Dota2_League");
-		OntClass lolLeagueClass = model.createClass(namespace+"LOL_League");
-		//OntClass owLeagueClass = model.createClass(namespace+"Overwatch_League");
-		OntClass pubgLeagueClass = model.createClass(namespace+"PUBG_League");
-		leagueClass.addSubClass(csgoLeagueClass);
-		leagueClass.addSubClass(dotaLeagueClass);
-		leagueClass.addSubClass(lolLeagueClass);
-		//leagueClass.addSubClass(owLeagueClass);
-		leagueClass.addSubClass(pubgLeagueClass);
+
 
 		// On ajoute toutes les leagues
 		JSONArray leaguesJSON = getArrayFromName("csgo_leagues", "leagues");
-		addEveryLeague(model, leagueClass, csgoLeagueClass, leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+ URIref.encode("csgo")));
+		addEveryLeague(model, leagueClass, leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+ URIref.encode("csgo")));
 
 		leaguesJSON = getArrayFromName("dota2_leagues", "leagues");
-		addEveryLeague(model, leagueClass, dotaLeagueClass, leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("dota2")));
+		addEveryLeague(model, leagueClass, leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("dota2")));
 
 		leaguesJSON = getArrayFromName("lol_leagues", "leagues");
-		addEveryLeague(model, leagueClass, lolLeagueClass,  leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("lol")));
+		addEveryLeague(model, leagueClass,  leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("lol")));
 
-		//leaguesJSON = getArrayFromName("ow_leagues", "leagues");
-		//addEveryLeague(model, leagueClass,owLeagueClass, leaguesJSON, nameProp, idProp, typeProp, leagueProp,model.getResource(namespace+URIref.encode("ow")));
-
+		leaguesJSON = getArrayFromName("ow_leagues", "leagues");
+		addEveryLeague(model, leagueClass,  leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("ow")));
 		leaguesJSON = getArrayFromName("pubg_leagues", "leagues");
-		addEveryLeague(model, leagueClass,pubgLeagueClass,  leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("pubg")));
+		addEveryLeague(model, leagueClass, leaguesJSON, nameProp, idProp, typeProp, leagueProp ,videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("pubg")));
 
 		//Création de la classe joueur et de ses sous classes (pour les différents jeux)
 		OntClass playerClass = model.createClass(namespace+"player");
@@ -117,31 +107,21 @@ public class Main4{
 
 		//On créé les différentes classes
 		OntClass teamClass = model.createClass(namespace+"team");
-		OntClass dotaTeamClass = model.createClass(namespace+"Dota2_team");
-		OntClass lolTeamClass = model.createClass(namespace+"LOL_team");
-		OntClass csgoTeamClass = model.createClass(namespace+"CSGO_team");
-		OntClass owTeamClass = model.createClass(namespace+"Overwatch_team");
-		OntClass pubgTeamClass = model.createClass(namespace+"PUBG_team");
-		teamClass.addSubClass(csgoTeamClass);
-		teamClass.addSubClass(dotaTeamClass);
-		teamClass.addSubClass(lolTeamClass);
-		teamClass.addSubClass(owTeamClass);
-		teamClass.addSubClass(pubgTeamClass);
 
 		JSONArray teamsJSON = getArrayFromName("csgo_teams", "teams");
-		addEveryTeam(model, teamClass, csgoTeamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("csgo")));
+		addEveryTeam(model, teamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("csgo")));
 
 		teamsJSON = getArrayFromName("dota2_teams", "teams");
-		addEveryTeam(model, teamClass, dotaTeamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("dota2")));
+		addEveryTeam(model, teamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("dota2")));
 
 		teamsJSON = getArrayFromName("lol_teams", "teams");
-		addEveryTeam(model, teamClass, lolTeamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("lol")));
+		addEveryTeam(model, teamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("lol")));
 
 		teamsJSON = getArrayFromName("ow_teams", "teams");
-		addEveryTeam(model, teamClass, owTeamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("ow")));
+		addEveryTeam(model, teamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("ow")));
 
 		teamsJSON = getArrayFromName("pubg_teams", "teams");
-		addEveryTeam(model, teamClass, pubgTeamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("pubg")));
+		addEveryTeam(model, teamClass, teamsJSON, nameProp, idProp, typeProp, playerProp, videogameProp, imageUrlProp, model.getResource(namespace+URIref.encode("pubg")));
 
 
 		//Création des propriétés qui relient les series aux tournois
@@ -152,16 +132,7 @@ public class Main4{
 
 		//Création de la classe serie et de ses sous classes
 		OntClass seriesClass = model.createClass(namespace+"serie");
-		OntClass csgoSeriesClass = model.createClass(namespace+"CSGO_Serie");
-		OntClass dotaSeriesClass = model.createClass(namespace+"Dota2_Serie");
-		OntClass lolSeriesClass = model.createClass(namespace+"LOL_Serie");
-		OntClass owSeriesClass = model.createClass(namespace+"Overwatch_Serie");
-		OntClass pubgSeriesClass = model.createClass(namespace+"PUBG_Serie");
-		seriesClass.addSubClass(csgoSeriesClass);
-		seriesClass.addSubClass(dotaSeriesClass);
-		seriesClass.addSubClass(lolSeriesClass);
-		seriesClass.addSubClass(owSeriesClass);
-		seriesClass.addSubClass(pubgSeriesClass);
+
 
 		//Création de la property prizepool
 		ObjectProperty prizePoolProp = model.createObjectProperty(namespace+"prizepool");
@@ -172,19 +143,19 @@ public class Main4{
 
 		// On ajoute toutes les series
 		JSONArray seriesJSON = getArrayFromName("dota2_series", "series");
-		addEverySerie(model, seriesClass, dotaSeriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+URIref.encode("dota2")));
+		addEverySerie(model, seriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+URIref.encode("dota2")));
 
 		seriesJSON = getArrayFromName("csgo_series", "series");
-		addEverySerie(model, seriesClass, csgoSeriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+ URIref.encode("csgo")));
+		addEverySerie(model, seriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+ URIref.encode("csgo")));
 
 		seriesJSON = getArrayFromName("lol_series", "series");
-		addEverySerie(model, seriesClass, lolSeriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+URIref.encode("lol")));
+		addEverySerie(model, seriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+URIref.encode("lol")));
 
 		seriesJSON = getArrayFromName("ow_series", "series");
-		addEverySerie(model, seriesClass, owSeriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+URIref.encode("ow")));
+		addEverySerie(model, seriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+URIref.encode("ow")));
 
 		seriesJSON = getArrayFromName("pubg_series", "series");
-		addEverySerie(model, seriesClass, pubgSeriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+URIref.encode("pubg")));
+		addEverySerie(model, seriesClass, seriesJSON, nameProp, idProp, typeProp, serieProp, videogameProp, prizePoolProp, winnerProp, model.getResource(namespace+URIref.encode("pubg")));
 
 		//Ajout des tournois
 		ObjectProperty matchProp = model.createObjectProperty(namespace+"match");
@@ -243,11 +214,11 @@ public class Main4{
 
 
 
-		String fileName = "modele.nt";
+		String fileName = "modele.ttl";
 		FileWriter out = new FileWriter( fileName);
 		try {
 			//On écrit sous la forme de ntriples, d'où le .nt
-			model.write(out, "N-TRIPLES" );
+			model.write(out, "turtle" );
 		}
 		finally {
 			try {
@@ -314,7 +285,7 @@ public class Main4{
 	 * @param typeProp
 	 * @param playersProp
 	 */
-	public static void addEveryTeam(OntModel model, OntClass teamClass, OntClass teamSubClass, JSONArray teamsJSON, Property nameProp, Property idProp, Property typeProp, Property playersProp, Property gameProp, Property imageUrlProp, Resource gameResource){
+	public static void addEveryTeam(OntModel model, OntClass teamClass, JSONArray teamsJSON, Property nameProp, Property idProp, Property typeProp, Property playersProp, Property gameProp, Property imageUrlProp, Resource gameResource){
 		JSONObject teamJSON;
 		JSONArray playersJSON;
 		JSONObject playerJSON;
@@ -332,7 +303,6 @@ public class Main4{
 			resourceTeam.addProperty(idProp, teamJSON.get("id").toString());
 			resourceTeam.addProperty(nameProp, teamJSON.get("name").toString().replace(" ", ""));
 			resourceTeam.addProperty(typeProp, teamClass);
-			resourceTeam.addProperty(typeProp, teamSubClass);
 			resourceTeam.addProperty(gameProp, gameResource);
 			if(teamJSON.get("image_url") != null){
 				resourceTeam.addProperty(imageUrlProp, model.createResource(teamJSON.get("image_url").toString()));
@@ -356,7 +326,7 @@ public class Main4{
 		}
 	}
 
-	public static void addEveryLeague(OntModel model, OntClass leagueClass, OntClass leagueSubClass, JSONArray leaguesJSON, Property nameProp, Property idProp, Property typeProp, Property leagueProp , Property gameProp, Property imageUrlProp, Resource gameResource) {
+	public static void addEveryLeague(OntModel model, OntClass leagueClass, JSONArray leaguesJSON, Property nameProp, Property idProp, Property typeProp, Property leagueProp , Property gameProp, Property imageUrlProp, Resource gameResource) {
 		JSONObject leagueJSON;
 		Resource resourceLeague;
 		JSONArray seriesJSON;
@@ -368,7 +338,6 @@ public class Main4{
 			resourceLeague.addProperty(idProp, leagueJSON.get("id").toString());
 			resourceLeague.addProperty(nameProp, leagueJSON.get("name").toString().replace(" ", ""));
 			resourceLeague.addProperty(typeProp, leagueClass);
-			resourceLeague.addProperty(typeProp, leagueSubClass);
 			resourceLeague.addProperty(gameProp, gameResource);
 			if(leagueJSON.get("image_url") != null){
 				resourceLeague.addProperty(imageUrlProp, model.createResource(leagueJSON.get("image_url").toString()));
@@ -390,7 +359,7 @@ public class Main4{
 			r = it.nextResource();
 		}*/
 
-	public static void addEverySerie(OntModel model, OntClass serieClass, OntClass serieSubClass, JSONArray seriesJSON, Property nameProp, Property idProp, Property typeProp, Property serieProp, Property gameProp, Property prizePoolProp, Property winnerProp, Resource videogameResource) {
+	public static void addEverySerie(OntModel model, OntClass serieClass, JSONArray seriesJSON, Property nameProp, Property idProp, Property typeProp, Property serieProp, Property gameProp, Property prizePoolProp, Property winnerProp, Resource videogameResource) {
 		JSONObject serieJSON;
 		Resource resourceSerie;
 		JSONArray tournamentsJSON;
@@ -410,7 +379,6 @@ public class Main4{
 				resourceSerie.addProperty(nameProp, serieJSON.get("name").toString().replace(" ", ""));
 			}
 			resourceSerie.addProperty(typeProp, serieClass);
-			resourceSerie.addProperty(typeProp, serieSubClass);
 			resourceSerie.addProperty(gameProp, videogameResource);
 			if(serieJSON.get("winner_id") != null){
 				it = model.listResourcesWithProperty(idProp, model.createLiteral(serieJSON.get("winner_id").toString()));
