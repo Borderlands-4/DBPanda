@@ -471,7 +471,7 @@ public class Main4{
 			resourceMatch = model.getResource(namespace+URIref.encode(matchJSON.get("slug").toString()));
 			if(matchJSON.get("begin_at")!= null){
 				//date = LocalDate.parse(matchJSON.get("begin_at").toString(), DateTimeFormatter.ISO_OFFSET_DATE_TIME);
-				date = model.createTypedLiteral(matchJSON.get("begin_at").toString(), XSDDateType.XSDdate);
+				date = model.createTypedLiteral(matchJSON.get("begin_at").toString().substring(0,10), XSDDateType.XSDdate);
 				//cal.set(date.getYear(), date.getMonthValue()-1, date.getDayOfMonth());
 
 				resourceMatch.addProperty(startedAtProp, date);
